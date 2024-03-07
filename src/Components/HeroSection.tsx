@@ -4,6 +4,7 @@ import React from "react";
 import { ImagesSlider } from "./ui/images-slider";
 import { TextGenerateEffect } from "./ui/text-generate-effect";
 import { TypewriterEffectSmooth } from "./ui/typewriter-effect";
+import { Button } from "./ui/moving-border";
 
 // const words = `Dive into our comprehensive music courses and transform your magical journey today.Whether you are a begineer or looking to refine your skills, join us to unlock your true potential.
 // `;
@@ -30,13 +31,13 @@ import { TypewriterEffectSmooth } from "./ui/typewriter-effect";
       ];
 
     const images = [
-        "https://images.unsplash.com/photo-1485433592409-9018e83a1f0d?q=80&w=1814&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      
         "https://images.unsplash.com/photo-1483982258113-b72862e6cff6?q=80&w=3456&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        "https://images.unsplash.com/photo-1482189349482-3defd547e0e9?q=80&w=2848&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+       
       ];
     return(
-        <div className="h-auto md:h-[40rem] w-full flex flex-col items-center relative overflow-hidden mx-auto  md:py-0 ">
-         <ImagesSlider className="h-[40rem]" images={images}>
+        <div className="h-auto md:h-[38rem] w-full flex flex-col items-center relative overflow-hidden mx-auto  md:py-0 ">
+         <ImagesSlider className="h-[38rem]" images={images}>
       <motion.div
         initial={{
           opacity: 0,
@@ -54,14 +55,15 @@ import { TypewriterEffectSmooth } from "./ui/typewriter-effect";
         <motion.p className="font-bold text-xl md:text-6xl text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 py-4">
           <TypewriterEffectSmooth words={words} />
         </motion.p>
-        <motion.p className="font-bold text-sm md:text-2xl text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 p-8">
+        <motion.p className="font-bold text-sm md:text-2xl text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 py-4 px-8 mb-4">
         {/* <TextGenerateEffect words={words} /> */}
-        Dive into our comprehensive music courses and transform your magical journey today.Whether you are a begineer or looking to refine your skills, join us to unlock your true potential
+        Dive into our comprehensive music courses and transform your magical journey today.  Whether you are a begineer or looking to refine your skills, join us to unlock your true potential
         </motion.p>
-        <button className="px-4 py-2 backdrop-blur-sm border bg-emerald-300/10 border-emerald-500/20 text-white mx-auto text-center rounded-full relative mt-4">
+        <Button borderRadius="1.75rem" 
+        className="bg-white dark:bg-slate-950 text-black dark:text-white border-neutral-200 border-slate-800">
           <span>Explore Courses →</span>
           <div className="absolute inset-x-0  h-px -bottom-px bg-gradient-to-r w-3/4 mx-auto from-transparent via-emerald-500 to-transparent" />
-        </button>
+        </Button>
       </motion.div>
     </ImagesSlider>
         </div>
