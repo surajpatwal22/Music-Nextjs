@@ -2,9 +2,9 @@
     "courses": [
       {
         "id": 1,
-        "title": "Guitar Fundamentals",
+        "title": "Guitar Fundamentals for Beginners",
         "slug": "guitar-fundamentals",
-        "description": "Learn the basics of playing guitar with our comprehensive beginner's course.",
+        "description": "Start your musical journey by Learning the basics of playing guitar with our comprehensive beginner's course.",
         "price": 99.99,
         "instructor": "John Doe",
         "isFeatured": true,
@@ -92,7 +92,7 @@
       },
       {
         "id": 10,
-        "title": "Blues Guitar Techniques",
+        "title": "Blues Guitar Techniques for Beginners",
         "slug": "blues-guitar-techniques",
         "description": "Discover the techniques of blues guitar to add soul and depth to your playing.",
         "price": 189.99,
