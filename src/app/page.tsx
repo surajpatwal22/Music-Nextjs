@@ -3,6 +3,8 @@ import HeroSection from '@/Components/HeroSection';
 import FeaturedSection from '@/Components/FeaturedSection';
 import WhychooseUse from '@/Components/WhychooseUse';
 import MusicTestimonail from '@/Components/MusicTestimonail';
+import UpcomingWebinars from '@/Components/UpcomingWebinars';
+
 
 
 export default function Home() {
@@ -12,6 +14,7 @@ export default function Home() {
     <FeaturedSection />
     <WhychooseUse />
     <MusicTestimonail />
+    <UpcomingWebinars />
    </div>
   );
 }
